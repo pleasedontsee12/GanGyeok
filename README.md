@@ -34,12 +34,36 @@
 ## 3. 개발 기간
 전체 개발 기간 : 2025-10-01 ~ 2022-12-17 <br>
 
-## 4. 트러블 슈팅
+## 4. 트러블 슈팅 (추후 작성예정)
 데이터 동기화 문제 : 일회성 get() 호출로 인해서 상태변경이 이루어지지 않음  
 Snapshot Listener 도입 : 실시간 구독을 통해 UI를 재구성함
+```kotlin
+// 1. 내 정보 실시간 감지
+    // 상태 변경이나 룸메이트의 찌르기를 즉시 받기 위함
+    DisposableEffect(firebaseUser) {
+        val user = firebaseUser
+        if (user != null) {
+            val registration = db.collection("users").document(user.uid)
+                .addSnapshotListener { snapshot, _ ->
+                    if (snapshot != null && snapshot.exists()) {
+                        val newUser = snapshot.toObject(User::class.java)
+                        // 핑 감지 (이전 데이터와 비교하여 알림 표시)
+                        if (userProfile != null && newUser != null && newUser.lastPing > userProfile!!.lastPing) {
+                            vibratePhone(context)
+                            Toast.makeText(context, "🤫 룸메이트가 콕! 찔렀습니다.", Toast.LENGTH_LONG).show()
+                        }
+                        // 상태 업데이트 -> UI 리컴포지션 발생
+                        userProfile = newUser
+                    }
+                }
+            onDispose { registration.remove() } // 컴포지션이 해제될 때 리스너 제거 (메모리 누수 방지)
+        } else { onDispose { } }
+    }
+```
 
 ## 5. 페이지 별 기능
 ### 0. 로그인 
+- 
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/ffefd40b-12be-4a1a-a000-410ca18c9569" />
 
 ### 1. 회원가입
