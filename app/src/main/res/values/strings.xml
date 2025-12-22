@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">gangyeok</string>
+    <string name="app_title">간격</string>
+    <string name="app_subtitle">따로 또 같이, 우리 사이</string>
+    <string name="login_button_text">입장하기 (로그인/가입)</string>
+</resources>

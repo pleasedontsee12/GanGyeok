@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561280288348",
+    "project_id": "gangyeok",
+    "storage_bucket": "gangyeok.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561280288348:android:bbe17fd77fa135c47a8899",
+        "android_client_info": {
+          "package_name": "com.example.gangyeok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgygZ6s6eNaStUTQp6LGIHIWOOOvXtlnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
