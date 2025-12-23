@@ -63,35 +63,54 @@ Snapshot Listener 도입 : 실시간 구독을 통해 UI를 재구성함
 
 ## 5. 페이지 별 기능
 ### 0. 로그인 
-- 
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/ffefd40b-12be-4a1a-a000-410ca18c9569" />
 
 ### 1. 회원가입
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/d91f658b-981c-4010-b651-10ff5734aad8" />
 
 ### 2. 비밀번호 찾기
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/52d46965-13c5-4253-8a02-88c582edf395" />
 
 ### 3. 하우스 찾기 / 만들기
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/0819a5a8-67cf-48dd-8c9d-894b6d6fd701" />
 
 ### 4. 하우스 만들기
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/7b77b9fd-3253-492f-8e01-65bdc6fe4d8e" />
 
 ### 5. 하우스 찾기
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/c13e62ad-10b3-47c1-aa2c-619ab776d9c6" />
 
 ### 6. 홈 화면</br>
+-
+-
 <img width="270" height="600" alt="Screenshot_20251223_021109" src="https://github.com/user-attachments/assets/45bab754-96f9-4244-ad5b-d4ca13d69f9c" />
 
 ### 7. 미션</br>
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/a50c868a-a483-4287-9512-0cc855366f03" />   
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/941ebdfe-0f52-476d-a519-248f52a21191" />
 
 ### 8. 수다방</br>
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/17fbd795-52c7-45ec-8f67-fca314d83bf9" />  
 
 ### 9. 설정
+-
+-
 <img width="270" height="600" alt="image" src="https://github.com/user-attachments/assets/ff8b8877-3fb3-4c1b-90f1-f386e981ca43" />
 
 
